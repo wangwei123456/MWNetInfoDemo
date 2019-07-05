@@ -58,7 +58,7 @@ typedef enum : NSUInteger {
 
 
 /**
-  获取当前连接的wifi的网关地址 iPhone手机如果连接到不可用的wifi时 不会显示wifi连接 依然显示4G 此时获取的网关并不是wifi的网关 而是蜂窝网络的网关  如果App需要与硬件的AP模式配合使用  获取网关就会有问题 所以我们需要获取当前连接wifi的网关地址 这样才能正常通信
+  获取当前连接的wifi的网关地址 iPhone手机如果连接到不可用的wifi时 可能不会显示wifi连接状态 依然显示4G 此时获取的网关并不是wifi的网关 而是蜂窝网络的网关  如果App需要与硬件的AP模式配合使用  获取网关就会有问题 所以我们需要获取当前连接wifi的网关地址 这样才能正常通信
  
  NOTE:IPV6网络下只会获取IPV6的网关地址，需要在IPV6网络下获取IPV4的网关地址请自行修改
       IPV4网络下 只能获取IPV4的网关地址
@@ -68,7 +68,7 @@ typedef enum : NSUInteger {
  */
 + (NSString *)getGateWayForCurWiFi;
 
-
++ (NSString *)getGateWayForCurWiFi:(MW_IP_TYPE)ipType;
 
 @end
 

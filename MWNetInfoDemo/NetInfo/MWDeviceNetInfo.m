@@ -131,7 +131,7 @@
             break;
         }
     }
-    NSLog(@"getDeviceIP:%@",resultIpStr);
+//    NSLog(@"getDeviceIP:%@",resultIpStr);
     return resultIpStr;
 }
 
@@ -169,7 +169,7 @@
             break;
         }
     }
-    NSLog(@"getDeviceIPStrWithCellular:%@",resultIpStr);
+//    NSLog(@"getDeviceIPStrWithCellular:%@",resultIpStr);
     return resultIpStr;
     
 }
@@ -186,7 +186,7 @@
     }else{
         resultGatewayStr = gatewayIpv4Str;
     }
-    NSLog(@"getGateWayForCurWiFi:%@",resultGatewayStr);
+//    NSLog(@"getGateWayForCurWiFi:%@",resultGatewayStr);
     return resultGatewayStr;
 }
 
@@ -291,10 +291,7 @@
                      }
                      
                  }
-                 
-                 
                
-                
             }
         }
         free(buf);
