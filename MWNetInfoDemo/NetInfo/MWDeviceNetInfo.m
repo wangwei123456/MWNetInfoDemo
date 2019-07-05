@@ -233,8 +233,9 @@
     struct sockaddr * sa_tab[RTAX_MAX];
     int i;
     
-    //此函数详解参照https://nanxiao.me/freebsd-sysctl/
-    //    https://blog.csdn.net/xuanzhuanshuixing/article/details/6031832
+    //此函数详解参照
+    //https://nanxiao.me/freebsd-sysctl/
+    //https://blog.csdn.net/xuanzhuanshuixing/article/details/6031832
     
     if(sysctl(mib, sizeof(mib)/sizeof(int), 0, &l, 0, 0) < 0) {
         return gatewayStr;
